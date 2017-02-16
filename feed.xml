@@ -4,8 +4,8 @@
         <description>forfire的Markdown博客</description>
         <link>/</link>
         <atom:link href="//feed.xml" rel="self" type="application/rss+xml" />
-        <pubDate>2017-02-16 04:02:57</pubDate>
-        <lastBuildDate>2017-02-16 04:02:57</lastBuildDate>
+        <pubDate>2017-02-16 04:02:31</pubDate>
+        <lastBuildDate>2017-02-16 04:02:31</lastBuildDate>
         <generator>Gitblog v1.0</generator>
                 <item>
             <title>身份证精准验证</title>
@@ -202,7 +202,7 @@ cd /opt/gitlab/embedded/service/gitlab-rails
 git apply /tmp/8.16.diff&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;启动&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;sudo gitlab-ctl start&lt;/code&gt;&lt;/pre&gt;            </description>
-            <pubDate>2017-02-16 03:44:01</pubDate>
+            <pubDate>2017-02-16 04:18:05</pubDate>
             <link>//blog/gitlab.html</link>
             <guid isPermaLink="true">//blog/gitlab.html</guid>
                                                <category>git</category>
