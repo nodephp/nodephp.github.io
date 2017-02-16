@@ -4,8 +4,8 @@
         <description>forfire的Markdown博客</description>
         <link>/</link>
         <atom:link href="//feed.xml" rel="self" type="application/rss+xml" />
-        <pubDate>2017-02-16 03:02:22</pubDate>
-        <lastBuildDate>2017-02-16 03:02:22</lastBuildDate>
+        <pubDate>2017-02-16 03:02:43</pubDate>
+        <lastBuildDate>2017-02-16 03:02:43</lastBuildDate>
         <generator>Gitblog v1.0</generator>
                 <item>
             <title>身份证精准验证</title>
@@ -99,7 +99,7 @@ category: git
 status: publish
 summary: centos gitlab 安装
 --&gt;
-&lt;h4&gt;添加国内gitlab源&lt;/h4&gt;
+&lt;h2&gt;添加国内gitlab源&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;vim /etc/yum.repos.d/gitlab-ce.repo
 
 [gitlab-ce]
@@ -122,7 +122,7 @@ sudo chkconfig postfix on
 # 安装 GitLab 社区版
 sudo yum install gitlab-ce
 # 初始化 GitLab&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;关闭自带nginx&lt;/h4&gt;
+&lt;h2&gt;关闭自带nginx&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;vim /etc/gitlab/gitlab.rb
 nginx['enable'] = false&lt;/code&gt;&lt;/pre&gt;
 &lt;h4&gt;nginx conf&lt;/h4&gt;
@@ -188,11 +188,11 @@ server {
 
   error_page 502 /502.html;
 }&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;配置&lt;/h4&gt;
+&lt;h2&gt;配置&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;sudo gitlab-ctl reconfigure&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;502报错解决&lt;/h4&gt;
+&lt;h2&gt;502报错解决&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;sudo chmod -R o+x /var/opt/gitlab/gitlab-rails&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;汉化&lt;/h4&gt;
+&lt;h2&gt;汉化&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;#查看版本
 cat /opt/gitlab/embedded/service/gitlab-rails/VERSION
 #根据版本   diff对应branch语言包
@@ -200,9 +200,9 @@ git clone https://gitlab.com/xhang/gitlab.git
 sudo git diff origin/8-16-stable..8-16-stable-zh &amp;gt; /tmp/8.16.diff
 cd /opt/gitlab/embedded/service/gitlab-rails
 git apply /tmp/8.16.diff&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;启动&lt;/h4&gt;
+&lt;h2&gt;启动&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;sudo gitlab-ctl start&lt;/code&gt;&lt;/pre&gt;            </description>
-            <pubDate>2017-02-16 03:28:07</pubDate>
+            <pubDate>2017-02-16 03:42:40</pubDate>
             <link>//blog/gitlab.html</link>
             <guid isPermaLink="true">//blog/gitlab.html</guid>
                                                <category>git</category>

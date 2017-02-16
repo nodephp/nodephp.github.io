@@ -34,7 +34,7 @@ category: git
 status: publish
 summary: centos gitlab 安装
 -->
-<h4>添加国内gitlab源</h4>
+<h2>添加国内gitlab源</h2>
 <pre><code>vim /etc/yum.repos.d/gitlab-ce.repo
 
 [gitlab-ce]
@@ -57,7 +57,7 @@ sudo chkconfig postfix on
 # 安装 GitLab 社区版
 sudo yum install gitlab-ce
 # 初始化 GitLab</code></pre>
-<h4>关闭自带nginx</h4>
+<h2>关闭自带nginx</h2>
 <pre><code>vim /etc/gitlab/gitlab.rb
 nginx['enable'] = false</code></pre>
 <h4>nginx conf</h4>
@@ -123,11 +123,11 @@ server {
 
   error_page 502 /502.html;
 }</code></pre>
-<h4>配置</h4>
+<h2>配置</h2>
 <pre><code>sudo gitlab-ctl reconfigure</code></pre>
-<h4>502报错解决</h4>
+<h2>502报错解决</h2>
 <pre><code>sudo chmod -R o+x /var/opt/gitlab/gitlab-rails</code></pre>
-<h4>汉化</h4>
+<h2>汉化</h2>
 <pre><code>#查看版本
 cat /opt/gitlab/embedded/service/gitlab-rails/VERSION
 #根据版本   diff对应branch语言包
@@ -135,7 +135,7 @@ git clone https://gitlab.com/xhang/gitlab.git
 sudo git diff origin/8-16-stable..8-16-stable-zh &gt; /tmp/8.16.diff
 cd /opt/gitlab/embedded/service/gitlab-rails
 git apply /tmp/8.16.diff</code></pre>
-<h4>启动</h4>
+<h2>启动</h2>
 <pre><code>sudo gitlab-ctl start</code></pre>
 	</article>
 
