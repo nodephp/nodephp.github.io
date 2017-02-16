@@ -4,8 +4,8 @@
         <description>forfire的Markdown博客</description>
         <link>/</link>
         <atom:link href="//feed.xml" rel="self" type="application/rss+xml" />
-        <pubDate>2017-02-16 06:02:26</pubDate>
-        <lastBuildDate>2017-02-16 06:02:26</lastBuildDate>
+        <pubDate>2017-02-16 06:02:05</pubDate>
+        <lastBuildDate>2017-02-16 06:02:05</lastBuildDate>
         <generator>Gitblog v1.0</generator>
                 <item>
             <title>身份证精准验证</title>
@@ -14,7 +14,7 @@
 author: nodephp
 date: 2017-02-16
 title: 身份证精准验证
-tags: javascript
+tags: 校验
 category: js
 status: publish
 summary:身份证由17位普通数字组成的本体码，以及1位校验码组成
@@ -82,7 +82,7 @@ summary:身份证由17位普通数字组成的本体码，以及1位校验码组
         }
     }&lt;/code&gt;&lt;/pre&gt;
 &lt;h4&gt;那么根据校验规则，我们也就知道身份证生成器的原理了&lt;/h4&gt;            </description>
-            <pubDate>2017-02-16 03:38:36</pubDate>
+            <pubDate>2017-02-16 06:26:28</pubDate>
             <link>//blog/idcard.html</link>
             <guid isPermaLink="true">//blog/idcard.html</guid>
                                                <category>js</category>
@@ -215,9 +215,9 @@ author: jockchou
 head: http://pingodata.qiniudn.com/jockchou-avatar.jpg
 date: 2015-07-31
 title: 欢迎使用GitBlog
-tags: GitBlog
+tags: gitblog
 images: http://pingodata.qiniudn.com/cube2.jpg
-category: GitBlog
+category: news
 status: publish
 summary: GitBlog是一个简单易用的Markdown博客系统，它不需要数据库，没有管理后台功能，更新博客只需要添加你写好的Markdown文件即可。
 --&gt;
@@ -282,10 +282,10 @@ summary: GitBlog是一个简单易用的Markdown博客系统，它不需要数�
 &lt;p&gt;GitBlog的成长需要喜欢Markdown，喜欢写博客的各位亲们支持！感谢你们使用GitBlog，感激你们对Gitblog的良好建议与Bug反馈。&lt;/p&gt;
 &lt;p&gt;QQ群：&lt;code&gt;84692078&lt;/code&gt;&lt;br /&gt;
 作者邮箱：&lt;code&gt;164068300[AT]qq.com&lt;/code&gt;    &lt;/p&gt;            </description>
-            <pubDate>2017-02-16 03:34:43</pubDate>
+            <pubDate>2017-02-16 06:26:46</pubDate>
             <link>//blog/welcome.html</link>
             <guid isPermaLink="true">//blog/welcome.html</guid>
-                                               <category>GitBlog</category>
+                                               <category>news</category>
                                     </item>
             </channel>
 </rss>
