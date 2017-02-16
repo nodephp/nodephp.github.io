@@ -44,7 +44,7 @@ repo_gpgcheck=0
 gpgcheck=0
 enabled=1
 gpgkey=https://packages.gitlab.com/gpg.key</code></pre>
-<h4>install</h4>
+<h2>安装</h2>
 <pre><code>sudo yum install curl openssh-server openssh-clients postfix cronie
 # 启动 postfix 邮件服务
 sudo service postfix start
@@ -60,7 +60,7 @@ sudo yum install gitlab-ce
 <h2>关闭自带nginx</h2>
 <pre><code>vim /etc/gitlab/gitlab.rb
 nginx['enable'] = false</code></pre>
-<h4>nginx conf</h4>
+<h2>nginx 配置</h2>
 <pre><code># gitlab socket 文件地址
 upstream gitlab {
   # 7.x 版本在此位置
@@ -123,7 +123,7 @@ server {
 
   error_page 502 /502.html;
 }</code></pre>
-<h2>配置</h2>
+<h2>初始化</h2>
 <pre><code>sudo gitlab-ctl reconfigure</code></pre>
 <h2>502报错解决</h2>
 <pre><code>sudo chmod -R o+x /var/opt/gitlab/gitlab-rails</code></pre>

@@ -4,8 +4,8 @@
         <description>forfire的Markdown博客</description>
         <link>/</link>
         <atom:link href="//feed.xml" rel="self" type="application/rss+xml" />
-        <pubDate>2017-02-16 03:02:43</pubDate>
-        <lastBuildDate>2017-02-16 03:02:43</lastBuildDate>
+        <pubDate>2017-02-16 03:02:03</pubDate>
+        <lastBuildDate>2017-02-16 03:02:03</lastBuildDate>
         <generator>Gitblog v1.0</generator>
                 <item>
             <title>身份证精准验证</title>
@@ -109,7 +109,7 @@ repo_gpgcheck=0
 gpgcheck=0
 enabled=1
 gpgkey=https://packages.gitlab.com/gpg.key&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;install&lt;/h4&gt;
+&lt;h2&gt;安装&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;sudo yum install curl openssh-server openssh-clients postfix cronie
 # 启动 postfix 邮件服务
 sudo service postfix start
@@ -125,7 +125,7 @@ sudo yum install gitlab-ce
 &lt;h2&gt;关闭自带nginx&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;vim /etc/gitlab/gitlab.rb
 nginx['enable'] = false&lt;/code&gt;&lt;/pre&gt;
-&lt;h4&gt;nginx conf&lt;/h4&gt;
+&lt;h2&gt;nginx 配置&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;# gitlab socket 文件地址
 upstream gitlab {
   # 7.x 版本在此位置
@@ -188,7 +188,7 @@ server {
 
   error_page 502 /502.html;
 }&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;配置&lt;/h2&gt;
+&lt;h2&gt;初始化&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;sudo gitlab-ctl reconfigure&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;502报错解决&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;sudo chmod -R o+x /var/opt/gitlab/gitlab-rails&lt;/code&gt;&lt;/pre&gt;
@@ -202,7 +202,7 @@ cd /opt/gitlab/embedded/service/gitlab-rails
 git apply /tmp/8.16.diff&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;启动&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;sudo gitlab-ctl start&lt;/code&gt;&lt;/pre&gt;            </description>
-            <pubDate>2017-02-16 03:42:40</pubDate>
+            <pubDate>2017-02-16 03:44:01</pubDate>
             <link>//blog/gitlab.html</link>
             <guid isPermaLink="true">//blog/gitlab.html</guid>
                                                <category>git</category>
