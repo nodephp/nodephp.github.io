@@ -4,8 +4,8 @@
         <description>forfire的Markdown博客</description>
         <link>/</link>
         <atom:link href="//feed.xml" rel="self" type="application/rss+xml" />
-        <pubDate>2017-02-24 03:02:37</pubDate>
-        <lastBuildDate>2017-02-24 03:02:37</lastBuildDate>
+        <pubDate>2017-02-24 03:02:15</pubDate>
+        <lastBuildDate>2017-02-24 03:02:15</lastBuildDate>
         <generator>Gitblog v1.0</generator>
                 <item>
             <title>加速android gradle构建速度</title>
@@ -29,22 +29,13 @@ org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryErro
 org.gradle.parallel=true // 使用并行编译 
 org.gradle.configureondemand=true&lt;/code&gt;&lt;/pre&gt;
 &lt;h3&gt;3. 开启 gradle offline&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;打开Android Studio设置。切换到下图：勾上Offline Work。
+&lt;p&gt;+打开Android Studio设置。切换到下图：勾上Offline Work。
 &lt;img src=&quot;http://upload-images.jianshu.io/upload_images/1351616-18a67b76c938b01d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;Paste_Image.png&quot; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;再切换到如下
+&lt;p&gt;+再切换到如下
 ![Paste_Image.png](&lt;a href=&quot;http://upload-images.jianshu.io/upload_images/1351616-94540b1e21dd5aae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot;&gt;http://upload-images.jianshu.io/upload_images/1351616-94540b1e21dd5aae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&lt;/a&gt;）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;如果还慢加速--profile 分析
-&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/1351616-52510af2a4ed8efe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;Paste_Image.png&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/2a58fd896214&quot;&gt;http://www.jianshu.com/p/2a58fd896214&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;            </description>
-            <pubDate>2017-02-24 03:58:30</pubDate>
+&lt;p&gt;+如果还慢加速--profile 分析
+&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/1351616-52510af2a4ed8efe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;Paste_Image.png&quot; /&gt;&lt;/p&gt;            </description>
+            <pubDate>2017-02-24 03:59:14</pubDate>
             <link>//blog/gradle.html</link>
             <guid isPermaLink="true">//blog/gradle.html</guid>
                                                <category>android</category>
