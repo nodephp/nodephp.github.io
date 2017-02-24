@@ -4,9 +4,48 @@
         <description>forfire的Markdown博客</description>
         <link>/</link>
         <atom:link href="//feed.xml" rel="self" type="application/rss+xml" />
-        <pubDate>2017-02-16 06:02:05</pubDate>
-        <lastBuildDate>2017-02-16 06:02:05</lastBuildDate>
+        <pubDate>2017-02-24 03:02:58</pubDate>
+        <lastBuildDate>2017-02-24 03:02:58</lastBuildDate>
         <generator>Gitblog v1.0</generator>
+                <item>
+            <title>加速android gradle构建速度</title>
+            <description>
+            &lt;!--
+author: nodephp
+date: 2017-02-24
+title: 加速android gradle构建速度
+tags: android gradle
+category: android
+status: publish
+summary:加快android编译,gradle 构建速度，快速测试android
+--&gt;
+&lt;p&gt;android 开发时候，调试是个很麻烦的问题,有时改了几行代码,gradle要等几分钟，大的项目可能有十几分钟。
+其实可以通过修改一些设置加快gradle速度&lt;/p&gt;
+&lt;h3&gt;1. 升级到最小版本的Android Studio&lt;/h3&gt;
+&lt;h3&gt;2. 修改 gradle.properties 配置&lt;/h3&gt;
+&lt;p&gt;主要是jvmargs 配置的内存，内存大的可以多配置一些&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;org.gradle.daemon=true
+org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8
+org.gradle.parallel=true
+org.gradle.configureondemand=true&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;3. 开启 gradle offline&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;打开Android Studio设置。切换到下图：勾上Offline Work。
+&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/1351616-18a67b76c938b01d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;Paste_Image.png&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;再切换到如下
+![Paste_Image.png](&lt;a href=&quot;http://upload-images.jianshu.io/upload_images/1351616-94540b1e21dd5aae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot;&gt;http://upload-images.jianshu.io/upload_images/1351616-94540b1e21dd5aae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&lt;/a&gt;）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;如果还慢加速--profile 分析
+&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/1351616-52510af2a4ed8efe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;Paste_Image.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;            </description>
+            <pubDate>2017-02-24 03:53:14</pubDate>
+            <link>//blog/gradle.html</link>
+            <guid isPermaLink="true">//blog/gradle.html</guid>
+                                               <category>android</category>
+                                    </item>
                 <item>
             <title>身份证精准验证</title>
             <description>

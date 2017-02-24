@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>forfire</title>
-	<meta name="keywords" content="校验,news,forfire,taskcode,forfire">
-	<meta name="description" content="forfire的Markdown博客">
+	<title>加速android gradle构建速度|forfire</title>
+	<meta name="keywords" content="android,gradle,forfire">
+	<meta name="description" content="加快android编译,gradle 构建速度，快速测试android">
 	
 	<link rel="stylesheet" href="/theme/quest/assets/plugins/bootstrap/css/bootstrap.min.css?ver=2.2" type="text/css" media="all" />
 	<link rel="stylesheet" href="/theme/quest/assets/plugins/font-awesome/css/font-awesome.min.css?ver=2.2" type="text/css" media="all" />
@@ -39,54 +39,90 @@
 	</div>
 </div>
 </header>		    <div id="content">
-					    	    	
-    	    		<div class="quest-row" id="title-container">
-	<div class="container title-container">
-		<div class="row">
-			<div class="col-md-6">
-								<h3>news</h3>
-							</div>
-			<div class="col-md-6">
-				<ul class="breadcrumbs">
-					<li><a href="/">Home</a></li>
-										<li>news</li>
-									</ul>
-				</div>
-		</div>
-	</div>
-</div>
-    		<div class="quest-row site-content">
+	<div class="quest-row site-content">
 		<div class="container">
 			<div class="row">
-				<div id="primary" class="content-area col-md-9">
+				<div id="primary" class="content-area single col-md-9">
 					<div id="main" class="site-main" role="main">
-																										        	<article class="post hentry">
+						<article class="post hentry">
 	<header class="entry-header">
-	<h1 class="post-title"><a href="/blog/idcard.html" rel="bookmark">身份证精准验证 </a></h1>
+	<h1 class="post-title"><a href="/blog/gradle.html" rel="bookmark">加速android gradle构建速度 </a></h1>
 	<div class="entry-meta">
-		<time class="post-date"><i class="fa fa-clock-o"></i>2017-02-16</time>
+		<time class="post-date"><i class="fa fa-clock-o"></i>2017-02-24</time>
 				<span class="seperator">/</span>
 	    <span><i class="fa fa-user"></i> nodephp</span>
 	    	</div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 	<div class="entry-content">
-		<p>身份证由17位普通数字组成的本体码，以及1位校验码组成</p>
+		<!--
+author: nodephp
+date: 2017-02-24
+title: 加速android gradle构建速度
+tags: android gradle
+category: android
+status: publish
+summary:加快android编译,gradle 构建速度，快速测试android
+-->
+<p>android 开发时候，调试是个很麻烦的问题,有时改了几行代码,gradle要等几分钟，大的项目可能有十几分钟。
+其实可以通过修改一些设置加快gradle速度</p>
+<h3>1. 升级到最小版本的Android Studio</h3>
+<h3>2. 修改 gradle.properties 配置</h3>
+<p>主要是jvmargs 配置的内存，内存大的可以多配置一些</p>
+<pre><code>org.gradle.daemon=true
+org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8
+org.gradle.parallel=true
+org.gradle.configureondemand=true</code></pre>
+<h3>3. 开启 gradle offline</h3>
+<ul>
+<li>
+<p>打开Android Studio设置。切换到下图：勾上Offline Work。
+<img src="http://upload-images.jianshu.io/upload_images/1351616-18a67b76c938b01d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+</li>
+<li>
+<p>再切换到如下
+![Paste_Image.png](<a href="http://upload-images.jianshu.io/upload_images/1351616-94540b1e21dd5aae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">http://upload-images.jianshu.io/upload_images/1351616-94540b1e21dd5aae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240</a>）</p>
+</li>
+<li>如果还慢加速--profile 分析
+<img src="http://upload-images.jianshu.io/upload_images/1351616-52510af2a4ed8efe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></li>
+</ul>
 	</div><!-- .entry-content -->	<footer class="entry-footer">
 		<ul class="post-categories">
           
-          <li><a href="/category/613093049.html" rel="category">js</a></li>
+          <li><a href="/category/4106367755.html" rel="category">android</a></li>
         	</ul>
 		
 		<ul class="post-tags">
-                   <li><a href="/tags/1996594044.html" rel="tag">校验</a></li>
+                   <li><a href="/tags/4106367755.html" rel="tag">android</a></li>
+                   <li><a href="/tags/2012367741.html" rel="tag">gradle</a></li>
         	</ul>
 		
-		<div class="read-more">
-		<a href="/blog/idcard.html">阅读全文<i class="fa fa-angle-double-right "></i></a>
-	</div>
-	</footer><!-- .entry-footer --></article><!-- #post-## -->					        						        																		</div>
+	</footer><!-- .entry-footer --></article><!-- #post-## -->            			<div id="comments" class="clearfix">
+	<div id="respond" class="comment-respond">
+		<!-- 多说评论框 start -->
+		<div class="ds-thread" data-thread-key="5d95d0496c1647403f859762f9eae191" data-title="加速android gradle构建速度" data-url=""></div>
+		<script type="text/javascript">
+		document.getElementsByClassName("ds-thread")[0].setAttribute('data-url', location.href);
+		</script>
+		<!-- 多说评论框 end -->
+		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+		<script type="text/javascript">
+		var duoshuoQuery = {short_name:"forfire"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] 
+			 || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+        <!-- 多说公共JS代码 end -->
+	</div><!-- #respond -->
+</div>
+					</div>
 					<!-- #main -->
 				</div>
+				<!-- #primary -->
 				<div id="secondary" class="widget-area main-sidebar col-md-3" role="complementary">
 	<aside class="widget widget_search sidebar-widget clearfix">
 	<h3 class="widget-title">搜索</h3>
@@ -139,7 +175,7 @@
 		<!-- .container -->
 	</div>
 	<!-- .quest-row -->
-</div><!-- #content -->		    <footer id="colophon" class="copyright quest-row" role="contentinfo">
+</div>		    <footer id="colophon" class="copyright quest-row" role="contentinfo">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 copyright-text">
