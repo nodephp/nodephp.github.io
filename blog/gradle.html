@@ -68,9 +68,9 @@ summary:加快android编译,gradle 构建速度，快速测试android
 <h3>1. 升级到最小版本的Android Studio</h3>
 <h3>2. 修改 gradle.properties 配置</h3>
 <p>主要是jvmargs 配置的内存，内存大的可以多配置一些</p>
-<pre><code>org.gradle.daemon=true
-org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8
-org.gradle.parallel=true
+<pre><code>org.gradle.daemon=true // 你编译时使用守护进程
+org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8 // XmxJVM最大允许分配的堆内存，按需分配 ;MaxPermSizeJVM最大允许分配的非堆内存，按需分配
+org.gradle.parallel=true // 使用并行编译 
 org.gradle.configureondemand=true</code></pre>
 <h3>3. 开启 gradle offline</h3>
 <ul>
@@ -85,6 +85,9 @@ org.gradle.configureondemand=true</code></pre>
 <li>如果还慢加速--profile 分析
 <img src="http://upload-images.jianshu.io/upload_images/1351616-52510af2a4ed8efe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></li>
 </ul>
+<blockquote>
+<p><a href="http://www.jianshu.com/p/2a58fd896214">http://www.jianshu.com/p/2a58fd896214</a></p>
+</blockquote>
 	</div><!-- .entry-content -->	<footer class="entry-footer">
 		<ul class="post-categories">
           
