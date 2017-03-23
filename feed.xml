@@ -4,8 +4,8 @@
         <description>forfire的Markdown博客</description>
         <link>/</link>
         <atom:link href="//feed.xml" rel="self" type="application/rss+xml" />
-        <pubDate>2017-03-23 06:03:02</pubDate>
-        <lastBuildDate>2017-03-23 06:03:02</lastBuildDate>
+        <pubDate>2017-03-23 06:03:16</pubDate>
+        <lastBuildDate>2017-03-23 06:03:16</lastBuildDate>
         <generator>Gitblog v1.0</generator>
                 <item>
             <title>那些php遗忘的地方</title>
