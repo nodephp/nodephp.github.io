@@ -4,9 +4,45 @@
         <description>forfire的Markdown博客</description>
         <link>/</link>
         <atom:link href="//feed.xml" rel="self" type="application/rss+xml" />
-        <pubDate>2017-02-24 03:02:15</pubDate>
-        <lastBuildDate>2017-02-24 03:02:15</lastBuildDate>
+        <pubDate>2017-03-23 06:03:02</pubDate>
+        <lastBuildDate>2017-03-23 06:03:02</lastBuildDate>
         <generator>Gitblog v1.0</generator>
+                <item>
+            <title>那些php遗忘的地方</title>
+            <description>
+            &lt;!--
+author: nodephp
+date: 2017-02-24
+title: 那些php遗忘的地方
+tags: php
+category: php
+status: publish
+summary:php那些需要注意的地方
+--&gt;
+&lt;p&gt;自 5.4 起可以使用短数组定义语法，用 [] 替代 array()。&lt;/p&gt;
+&lt;p&gt;$secondElement = getArray()[1];
+unset() 函数允许删除数组中的某个键。但要注意数组将不会重建索引。如果需要删除后重建索引，可以用 array_values() 函数。&lt;/p&gt;
+&lt;p&gt;$GLOBALS&lt;/p&gt;
+&lt;p&gt;静态变量&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;function test()
+{
+    static $a = 0;
+    echo $a;
+    $a++;
+}
+test();
+test();
+test();
+test();&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;$a ** $b power&lt;/p&gt;
+&lt;p&gt;php 运算符&lt;/p&gt;
+&lt;!-- https
+git 迁移 --&gt;            </description>
+            <pubDate>2017-02-27 02:29:42</pubDate>
+            <link>//blog/php.html</link>
+            <guid isPermaLink="true">//blog/php.html</guid>
+                                               <category>php</category>
+                                    </item>
                 <item>
             <title>加速android gradle构建速度</title>
             <description>

@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>forfire</title>
-	<meta name="keywords" content="forfire,taskcode,forfire">
-	<meta name="description" content="forfire的Markdown博客">
+	<title>那些php遗忘的地方|forfire</title>
+	<meta name="keywords" content="php,forfire">
+	<meta name="description" content="php那些需要注意的地方">
 	
 	<link rel="stylesheet" href="/theme/quest/assets/plugins/bootstrap/css/bootstrap.min.css?ver=2.2" type="text/css" media="all" />
 	<link rel="stylesheet" href="/theme/quest/assets/plugins/font-awesome/css/font-awesome.min.css?ver=2.2" type="text/css" media="all" />
@@ -39,13 +39,12 @@
 	</div>
 </div>
 </header>		    <div id="content">
-		    	
-    		<div class="quest-row site-content">
+	<div class="quest-row site-content">
 		<div class="container">
 			<div class="row">
-				<div id="primary" class="content-area col-md-9">
+				<div id="primary" class="content-area single col-md-9">
 					<div id="main" class="site-main" role="main">
-																										        	<article class="post hentry">
+						<article class="post hentry">
 	<header class="entry-header">
 	<h1 class="post-title"><a href="/blog/php.html" rel="bookmark">那些php遗忘的地方 </a></h1>
 	<div class="entry-meta">
@@ -55,7 +54,34 @@
 	    	</div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 	<div class="entry-content">
-		<p>php那些需要注意的地方</p>
+		<!--
+author: nodephp
+date: 2017-02-24
+title: 那些php遗忘的地方
+tags: php
+category: php
+status: publish
+summary:php那些需要注意的地方
+-->
+<p>自 5.4 起可以使用短数组定义语法，用 [] 替代 array()。</p>
+<p>$secondElement = getArray()[1];
+unset() 函数允许删除数组中的某个键。但要注意数组将不会重建索引。如果需要删除后重建索引，可以用 array_values() 函数。</p>
+<p>$GLOBALS</p>
+<p>静态变量</p>
+<pre><code class="language-php">function test()
+{
+    static $a = 0;
+    echo $a;
+    $a++;
+}
+test();
+test();
+test();
+test();</code></pre>
+<p>$a ** $b power</p>
+<p>php 运算符</p>
+<!-- https
+git 迁移 -->
 	</div><!-- .entry-content -->	<footer class="entry-footer">
 		<ul class="post-categories">
           
@@ -66,109 +92,13 @@
                    <li><a href="/tags/1783669539.html" rel="tag">php</a></li>
         	</ul>
 		
-		<div class="read-more">
-		<a href="/blog/php.html">阅读全文<i class="fa fa-angle-double-right "></i></a>
-	</div>
-	</footer><!-- .entry-footer --></article><!-- #post-## -->					        						        													        	<article class="post hentry">
-	<header class="entry-header">
-	<h1 class="post-title"><a href="/blog/gradle.html" rel="bookmark">加速android gradle构建速度 </a></h1>
-	<div class="entry-meta">
-		<time class="post-date"><i class="fa fa-clock-o"></i>2017-02-24</time>
-				<span class="seperator">/</span>
-	    <span><i class="fa fa-user"></i> nodephp</span>
-	    	</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-	<div class="entry-content">
-		<p>加快android编译,gradle 构建速度，快速测试android</p>
-	</div><!-- .entry-content -->	<footer class="entry-footer">
-		<ul class="post-categories">
-          
-          <li><a href="/category/4106367755.html" rel="category">android</a></li>
-        	</ul>
-		
-		<ul class="post-tags">
-                   <li><a href="/tags/4106367755.html" rel="tag">android</a></li>
-                   <li><a href="/tags/2012367741.html" rel="tag">gradle</a></li>
-        	</ul>
-		
-		<div class="read-more">
-		<a href="/blog/gradle.html">阅读全文<i class="fa fa-angle-double-right "></i></a>
-	</div>
-	</footer><!-- .entry-footer --></article><!-- #post-## -->					        						        													        	<article class="post hentry">
-	<header class="entry-header">
-	<h1 class="post-title"><a href="/blog/idcard.html" rel="bookmark">身份证精准验证 </a></h1>
-	<div class="entry-meta">
-		<time class="post-date"><i class="fa fa-clock-o"></i>2017-02-16</time>
-				<span class="seperator">/</span>
-	    <span><i class="fa fa-user"></i> nodephp</span>
-	    	</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-	<div class="entry-content">
-		<p>身份证由17位普通数字组成的本体码，以及1位校验码组成</p>
-	</div><!-- .entry-content -->	<footer class="entry-footer">
-		<ul class="post-categories">
-          
-          <li><a href="/category/613093049.html" rel="category">js</a></li>
-        	</ul>
-		
-		<ul class="post-tags">
-                   <li><a href="/tags/1996594044.html" rel="tag">校验</a></li>
-        	</ul>
-		
-		<div class="read-more">
-		<a href="/blog/idcard.html">阅读全文<i class="fa fa-angle-double-right "></i></a>
-	</div>
-	</footer><!-- .entry-footer --></article><!-- #post-## -->					        						        													        	<article class="post hentry">
-	<header class="entry-header">
-	<h1 class="post-title"><a href="/blog/gitlab.html" rel="bookmark">centos gitlab 安装 </a></h1>
-	<div class="entry-meta">
-		<time class="post-date"><i class="fa fa-clock-o"></i>2017-02-14</time>
-				<span class="seperator">/</span>
-	    <span><i class="fa fa-user"></i> nodephp</span>
-	    	</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-	<div class="entry-content">
-		<p>centos gitlab 安装</p>
-	</div><!-- .entry-content -->	<footer class="entry-footer">
-		<ul class="post-categories">
-          
-          <li><a href="/category/2511338272.html" rel="category">git</a></li>
-        	</ul>
-		
-		<ul class="post-tags">
-                   <li><a href="/tags/978053863.html" rel="tag">gitlab</a></li>
-        	</ul>
-		
-		<div class="read-more">
-		<a href="/blog/gitlab.html">阅读全文<i class="fa fa-angle-double-right "></i></a>
-	</div>
-	</footer><!-- .entry-footer --></article><!-- #post-## -->					        						        													        	<article class="post hentry">
-	<header class="entry-header">
-	<h1 class="post-title"><a href="/blog/welcome.html" rel="bookmark">欢迎使用GitBlog </a></h1>
-	<div class="entry-meta">
-		<time class="post-date"><i class="fa fa-clock-o"></i>2015-07-31</time>
-				<span class="seperator">/</span>
-	    <span><i class="fa fa-user"></i> jockchou</span>
-	    	</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-	<div class="entry-content">
-		<p>GitBlog是一个简单易用的Markdown博客系统，它不需要数据库，没有管理后台功能，更新博客只需要添加你写好的Markdown文件即可。</p>
-	</div><!-- .entry-content -->	<footer class="entry-footer">
-		<ul class="post-categories">
-          
-          <li><a href="/category/2753427716.html" rel="category">news</a></li>
-        	</ul>
-		
-		<ul class="post-tags">
-                   <li><a href="/tags/1029963234.html" rel="tag">gitblog</a></li>
-        	</ul>
-		
-		<div class="read-more">
-		<a href="/blog/welcome.html">阅读全文<i class="fa fa-angle-double-right "></i></a>
-	</div>
-	</footer><!-- .entry-footer --></article><!-- #post-## -->					        						        																		</div>
+	</footer><!-- .entry-footer --></article><!-- #post-## -->            			<div id="comments" class="clearfix">
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2128282"></script>
+</div>					</div>
 					<!-- #main -->
 				</div>
+				<!-- #primary -->
 				<div id="secondary" class="widget-area main-sidebar col-md-3" role="complementary">
 	<aside class="widget widget_search sidebar-widget clearfix">
 	<h3 class="widget-title">搜索</h3>
@@ -224,7 +154,7 @@
 		<!-- .container -->
 	</div>
 	<!-- .quest-row -->
-</div><!-- #content -->		    <footer id="colophon" class="copyright quest-row" role="contentinfo">
+</div>		    <footer id="colophon" class="copyright quest-row" role="contentinfo">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 copyright-text">
